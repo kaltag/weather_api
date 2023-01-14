@@ -34,7 +34,7 @@ Capybara.register_driver :headless_chrome do |app|
   driver
 end
 
-if ENV["HEADLESS_CHROME"]
+if ENV['HEADLESS_CHROME']
   Capybara.default_driver = :headless_chrome
   Capybara.javascript_driver = :headless_chrome
 else

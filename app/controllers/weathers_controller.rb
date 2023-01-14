@@ -1,8 +1,10 @@
 require 'net/http'
 
 class WeathersController < ApplicationController
+  # Использовал бесплатный аккаунт, так что максимум 50 запросов в день с этим апикей
   APIKEY = 'YnlzZjAUPcF5iwMplNtzmLMtirwuAsnA'.freeze
 
+  # текущая температура
   def current
     uri = URI('http://dataservice.accuweather.com/currentconditions/v1/292110')
     params = { apikey: APIKEY }
@@ -12,7 +14,7 @@ class WeathersController < ApplicationController
     res = JSON.parse(response.body).first
     render json: res['Temperature']['Metric']['Value']
   end
-
+  # получение данных за 24 часа
   def get_his(tp = [])
     uri = URI('http://dataservice.accuweather.com/currentconditions/v1/292110/historical/24')
     params = { apikey: APIKEY }
@@ -24,7 +26,7 @@ class WeathersController < ApplicationController
       tp << t['Temperature']['Metric']['Value']
     end
   end
-
+  # вывод температуры за 24 часа
   def historical
     tp = []
     get_his(tp = [])
