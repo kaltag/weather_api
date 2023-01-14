@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dataservice.accuweather.com/currentconditions/v1/292110/historical/24?apikey=YnlzZjAUPcF5iwMplNtzmLMtirwuAsnA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - dataservice.accuweather.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 14 Jan 2023 07:40:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11926'
+      Connection:
+      - keep-alive
+      Server:
+      - Microsoft-IIS/10.0
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '48'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=523
+      Expires:
+      - Sat, 14 Jan 2023 07:49:25 GMT
+      Akamai-Grn:
+      - 0.24994d68.1673682042.28808ab8
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Ruby
+      X-Forwarded-For:
+      - 176.100.118.189
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2023-01-14T10:58:00+04:00","EpochTime":1673679480,"WeatherText":"Sunny","WeatherIcon":1,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-5.0,"Unit":"C","UnitType":17},"Imperial":{"Value":23.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T09:58:00+04:00","EpochTime":1673675880,"WeatherText":"Sunny","WeatherIcon":1,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-7.2,"Unit":"C","UnitType":17},"Imperial":{"Value":19.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T08:57:00+04:00","EpochTime":1673672220,"WeatherText":"Sunny","WeatherIcon":1,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-7.8,"Unit":"C","UnitType":17},"Imperial":{"Value":18.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T07:58:00+04:00","EpochTime":1673668680,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-7.8,"Unit":"C","UnitType":17},"Imperial":{"Value":18.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T06:58:00+04:00","EpochTime":1673665080,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-7.8,"Unit":"C","UnitType":17},"Imperial":{"Value":18.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T05:58:00+04:00","EpochTime":1673661480,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-7.8,"Unit":"C","UnitType":17},"Imperial":{"Value":18.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T04:58:00+04:00","EpochTime":1673657880,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-7.2,"Unit":"C","UnitType":17},"Imperial":{"Value":19.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T03:57:00+04:00","EpochTime":1673654220,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-7.2,"Unit":"C","UnitType":17},"Imperial":{"Value":19.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T02:58:00+04:00","EpochTime":1673650680,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-7.2,"Unit":"C","UnitType":17},"Imperial":{"Value":19.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T01:58:00+04:00","EpochTime":1673647080,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-7.2,"Unit":"C","UnitType":17},"Imperial":{"Value":19.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T01:05:00+04:00","EpochTime":1673643900,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-7.2,"Unit":"C","UnitType":17},"Imperial":{"Value":19.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-14T00:04:00+04:00","EpochTime":1673640240,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-6.1,"Unit":"C","UnitType":17},"Imperial":{"Value":21.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T23:04:00+04:00","EpochTime":1673636640,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-6.1,"Unit":"C","UnitType":17},"Imperial":{"Value":21.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T21:58:00+04:00","EpochTime":1673632680,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-6.1,"Unit":"C","UnitType":17},"Imperial":{"Value":21.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T20:58:00+04:00","EpochTime":1673629080,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-6.1,"Unit":"C","UnitType":17},"Imperial":{"Value":21.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T19:55:00+04:00","EpochTime":1673625300,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-6.1,"Unit":"C","UnitType":17},"Imperial":{"Value":21.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T18:55:00+04:00","EpochTime":1673621700,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-6.1,"Unit":"C","UnitType":17},"Imperial":{"Value":21.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T17:55:00+04:00","EpochTime":1673618100,"WeatherText":"Clear","WeatherIcon":33,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-5.0,"Unit":"C","UnitType":17},"Imperial":{"Value":23.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T16:55:00+04:00","EpochTime":1673614500,"WeatherText":"Sunny","WeatherIcon":1,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-3.9,"Unit":"C","UnitType":17},"Imperial":{"Value":25.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T15:58:00+04:00","EpochTime":1673611080,"WeatherText":"Sunny","WeatherIcon":1,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-2.8,"Unit":"C","UnitType":17},"Imperial":{"Value":27.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T15:04:00+04:00","EpochTime":1673607840,"WeatherText":"Sunny","WeatherIcon":1,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-2.8,"Unit":"C","UnitType":17},"Imperial":{"Value":27.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T13:59:00+04:00","EpochTime":1673603940,"WeatherText":"Sunny","WeatherIcon":1,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-2.8,"Unit":"C","UnitType":17},"Imperial":{"Value":27.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T13:04:00+04:00","EpochTime":1673600640,"WeatherText":"Sunny","WeatherIcon":1,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-3.9,"Unit":"C","UnitType":17},"Imperial":{"Value":25.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"},{"LocalObservationDateTime":"2023-01-13T11:57:00+04:00","EpochTime":1673596620,"WeatherText":"Partly
+        sunny","WeatherIcon":3,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-5.0,"Unit":"C","UnitType":17},"Imperial":{"Value":23.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us","Link":"http://www.accuweather.com/en/ru/astrakhan/292110/current-weather/292110?lang=en-us"}]'
+  recorded_at: Sat, 14 Jan 2023 07:40:41 GMT
+recorded_with: VCR 6.1.0

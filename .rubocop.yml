@@ -1,0 +1,37 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+  - 'bin/**/*'
+  - 'config.ru'
+  - 'config/**/*'
+  - 'db/migrate/*'
+  - 'db/schema.rb'
+  - 'Rakefile'
+  - 'test/test_helper.rb'
+  - 'vendor/**/*'
+  NewCops: enable
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  IgnoredMethods: ['feature']
+
+Style/ConditionalAssignment:
+  EnforcedStyle: assign_inside_condition
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case

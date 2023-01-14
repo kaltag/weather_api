@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+erb_files=$(git diff origin/main --name-only | grep "**/*\.erb")
+
+# Detect two spaces
+printf "\033[0;32m### Two spaces:\n"
+printf "\033[0m"
+for erb_file in $erb_files
+do
+    echo "Checking ${erb_file}..."
+    grep -nE "\w[[:space:]]{2,}" $erb_file
+done
+
+# ERB Lint
+echo ""
+printf "\033[0;32m### Erblint:\n"
+printf "\033[0m"
+for erb_file in $erb_files
+do
+    echo "Checking ${erb_file}..."
+    erblint --format compact $erb_file
+done
+
+# RuboCop
+echo ""
+printf "\033[0;32m### RuboCop:\n"
+printf "\033[0m"
+bundle exec rubocop
